@@ -1,0 +1,12 @@
+.git/
+.github/
+.gitignore
+.venv/
+__pycache__/
+*.pyc
+reports/
+release-A/
+release-B/
+release.env
+.DS_Store
+*.tar

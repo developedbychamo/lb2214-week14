@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local artifacts
+iris_model.joblib
+reports/
+release.env
+release-A/
+release-B/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
