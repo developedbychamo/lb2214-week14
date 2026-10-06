@@ -18,7 +18,7 @@ jobs:
     outputs:
       image_ref: ${{ steps.image_name.outputs.name }}@${{ steps.build.outputs.digest }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v4
 
       - name: Choose lowercase image name
         id: image_name
@@ -37,7 +37,7 @@ jobs:
 
       - name: Build and publish
         id: build
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v5
         with:
           context: .
           platforms: linux/amd64,linux/arm64
